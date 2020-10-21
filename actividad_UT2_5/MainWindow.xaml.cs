@@ -28,7 +28,17 @@ namespace actividad_UT2_5
         }
         
 
-        private void writeTextBox_TextChanged(object sender, RoutedEventArgs e)
+        private void NegritaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultadoTextBlock.FontWeight = FontWeights.Normal;
+        }
+
+        private void CursivaCheckBox_Unchecked(object sender, RoutedEventArgs e)
+        {
+            resultadoTextBlock.FontStyle = FontStyles.Normal;
+        }
+
+        private void WriteTextBox_TextChanged(object sender, RoutedEventArgs e)
         {
             resultadoTextBlock.Text = writeTextBox.Text;
         }
